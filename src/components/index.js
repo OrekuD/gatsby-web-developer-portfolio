@@ -1,3 +1,8 @@
 export { default as Header } from "./Header/header"
 export { default as Layout } from "./Layout/Layout"
 export { default as SEO } from "./SEO/SEO"
+export { default as Banner } from "./Banner/Banner"
+export { default as Projects } from "./Projects/Projects"
+export { default as Project } from "./Project/Project"
+export { default as Title } from "./Title/Title"
+export { default as Footer } from "./Footer/Footer"
