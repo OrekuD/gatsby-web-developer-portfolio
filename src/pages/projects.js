@@ -1,8 +1,7 @@
 import React from "react"
 
 import { Layout, SEO, Projects } from "../components"
-
-const projects = [{ name: "" }, { name: "" }, { name: "" }, { name: "" }]
+import { projects } from "../data/projects"
 
 const ProjectsPage = () => (
   <Layout>

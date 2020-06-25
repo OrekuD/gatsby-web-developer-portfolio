@@ -8,7 +8,7 @@ const Banner = () => {
     query {
       image: file(relativePath: { eq: "img-1.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

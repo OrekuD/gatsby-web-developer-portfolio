@@ -1,12 +1,17 @@
 .title {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 
   h1 {
     display: block;
     text-align: center;
     margin: 10px 0;
     text-transform: capitalize;
+
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
   span {
     height: 3px;
@@ -14,5 +19,10 @@
     background-color: #30b0ac;
     display: block;
     align-self: center;
+
+    @media (max-width: 500px) {
+      height: 3px;
+      width: 60px;
+    }
   }
 }

@@ -18,6 +18,14 @@ body {
   flex-direction: column;
   padding: 0 40px;
   background-color: #edf2f7;
+
+  @media (max-width: 770px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0 10px;
+  }
 }
 
 a {
@@ -33,7 +41,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
   color: white;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -41,5 +49,36 @@ a {
   &:hover {
     background-color: blue;
     cursor: pointer;
+  }
+}
+
+.label {
+  width: fit-content;
+  height: 30px;
+  background-color: #30b0ac;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  margin-right: 10px;
+
+  @media (max-width: 770px) {
+    height: 26px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 500px) {
+    height: 24px;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: white;
+
+    @media (max-width: 500px) {
+      font-size: 0.6rem;
+    }
   }
 }
