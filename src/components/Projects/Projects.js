@@ -12,7 +12,7 @@ const Projects = ({ title, projects }) => {
       <Title name={title} />
       <div>
         {projects.map((project, index) => (
-          <Project key={index} project={project} />
+          <Project key={index} project={project} index={index} />
         ))}
       </div>
     </div>

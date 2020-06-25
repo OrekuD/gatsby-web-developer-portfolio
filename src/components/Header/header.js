@@ -9,10 +9,10 @@ const Header = () => (
       Portfolio<span>.</span>
     </h3>
     <div>
-      <Link>Home</Link>
-      <Link>About</Link>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
       <Link to="/projects">Projects</Link>
-      <Link>Contact</Link>
+      <Link to="/contact">Contact</Link>
     </div>
   </header>
 )
