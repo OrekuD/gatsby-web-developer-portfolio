@@ -5,7 +5,6 @@ import { projects } from "../data/projects"
 
 const IndexPage = () => {
   const featured = projects.filter(project => project.featured)
-  console.log(featured)
   return (
     <Layout>
       <SEO title="Home" />

@@ -9,7 +9,7 @@ const Projects = ({ title, projects }) => {
 
   return (
     <div className="projects-container">
-      <Title name={title} />
+      {title && <Title name={title} />}
       <div>
         {projects.map((project, index) => (
           <Project key={index} project={project} index={index} />

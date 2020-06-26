@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { MdScreenShare } from "react-icons/md"
 import { FaGithubSquare } from "react-icons/fa"
 
@@ -11,6 +10,7 @@ const Project = ({ project, index }) => {
     <div className={`project-container ${index % 2 === 1 ? "right" : ""}`}>
       <img
         src={image}
+        alt="thumbnail"
         style={{
           height: "100%",
           width: "100%",
@@ -32,10 +32,10 @@ const Project = ({ project, index }) => {
           ))}
         </div>
         <div>
-          <a href={url} target="_blank">
+          <a href={url} rel="noreferrer" target="_blank">
             <MdScreenShare fontSize="26" />
           </a>
-          <a href={github} target="_blank">
+          <a href={github} rel="noreferrer" target="_blank">
             <FaGithubSquare fontSize="21" />
           </a>
         </div>

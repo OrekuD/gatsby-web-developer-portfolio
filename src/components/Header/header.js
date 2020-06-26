@@ -1,9 +1,9 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { MdMenu } from "react-icons/md"
 import "./Header.scss"
 
-const Header = () => (
+const Header = ({ toggleSidebar }) => (
   <header>
     <h3>
       Portfolio<span>.</span>
@@ -14,11 +14,10 @@ const Header = () => (
       <Link to="/projects">Projects</Link>
       <Link to="/contact">Contact</Link>
     </div>
+    <div className="menu-icon" onClick={toggleSidebar}>
+      <MdMenu fontSize="30" />
+    </div>
   </header>
 )
-
-Header.propTypes = {}
-
-Header.defaultProps = {}
 
 export default Header

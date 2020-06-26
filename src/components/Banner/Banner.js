@@ -1,12 +1,12 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import "./Banner.scss"
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "img-1.jpg" }) {
+      image: file(relativePath: { eq: "nomad.png" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -21,9 +21,9 @@ const Banner = () => {
       <div className="banner-content">
         <h3> I'm David </h3>
         <h4> a software developer </h4>
-        <div className="button">
+        <Link to="/contact" className="button">
           <p> Contact me </p>
-        </div>
+        </Link>
       </div>
       <div className="image-container">
         <Img

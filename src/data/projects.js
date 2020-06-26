@@ -6,7 +6,7 @@ export const projects = [
   {
     name: "Chat app",
     featured: true,
-    url: "https://reactyoutubecloneapp.netlify.app/",
+    url: "https://react-socketio-chat-app.netlify.app/",
     github: "https://github.com/OrekuD/react-chat-app",
     image: Chat,
     description:

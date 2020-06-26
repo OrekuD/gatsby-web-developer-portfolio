@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Layout, SEO, Projects } from "../components"
+import { Layout, SEO, Projects, Title } from "../components"
 import { projects } from "../data/projects"
 
 const ProjectsPage = () => (
