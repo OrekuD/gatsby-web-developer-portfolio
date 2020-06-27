@@ -32,12 +32,16 @@ const Project = ({ project, index }) => {
           ))}
         </div>
         <div>
-          <a href={url} rel="noreferrer" target="_blank">
-            <MdScreenShare fontSize="26" />
-          </a>
-          <a href={github} rel="noreferrer" target="_blank">
-            <FaGithubSquare fontSize="21" />
-          </a>
+          {url && (
+            <a href={url} rel="noreferrer" target="_blank">
+              <MdScreenShare fontSize="30" />
+            </a>
+          )}
+          {github && (
+            <a href={github} rel="noreferrer" target="_blank">
+              <FaGithubSquare fontSize="23" />
+            </a>
+          )}
         </div>
       </div>
     </div>

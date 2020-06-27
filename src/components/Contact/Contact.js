@@ -3,9 +3,7 @@ import "./Contact.scss"
 
 const Contact = () => (
   <div className="contact-container">
-    <div className="content">
-      <h1> T </h1>
-    </div>
+    <h1> Contact page </h1>
   </div>
 )
 

@@ -1,0 +1,48 @@
+@import "../../constants/colors.scss";
+
+.about-container {
+  display: flex;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .left-container {
+    width: 40%;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+
+    .image {
+      max-width: 60%;
+      margin: auto;
+    }
+  }
+
+  .right-container {
+    width: 60%;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .technologies {
+      display: flex;
+      margin: 20px auto 0 auto;
+      flex-wrap: wrap;
+      // justify-content: space-evenly;
+    }
+
+    p {
+      width: 90%;
+      line-height: 1.3rem;
+      font-size: 1.1rem;
+
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+    }
+  }
+}

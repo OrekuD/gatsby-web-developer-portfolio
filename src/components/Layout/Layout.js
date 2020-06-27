@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 
-import { Header, Footer, Sidebar } from "../index"
+import { Header, Footer, Sidebar, Title } from "../index"
 import "./Layout.scss"
 import gsap from "gsap"
 import { navigate } from "gatsby"
 
-const Layout = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false)
-
+const Layout = ({ children, title }) => {
   const openMenu = () => {
-    setIsOpen(true)
     const tl = gsap.timeline()
     tl.to("#app-container", {
       duration: 0.6,
@@ -30,7 +27,6 @@ const Layout = ({ children }) => {
   }
 
   const closeMenu = () => {
-    setIsOpen(false)
     const tl = gsap.timeline()
     tl.to("#sidebar-container", {
       duration: 0.6,
@@ -53,15 +49,18 @@ const Layout = ({ children }) => {
     closeMenu()
     setTimeout(() => {
       navigate(location)
-    }, 700)
+    }, 500)
   }
 
   return (
     <>
       <Sidebar toggleSidebar={closeMenu} navigateTo={navigateTo} />
       <div className="layout-container" id="app-container">
-        <Header toggleSidebar={openMenu} />
-        {children}
+        <div>
+          <Header toggleSidebar={openMenu} />
+          {title && <Title name={title} />}
+          {children}
+        </div>
         <Footer />
       </div>
     </>

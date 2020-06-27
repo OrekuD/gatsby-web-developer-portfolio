@@ -3,9 +3,9 @@ import { Title, Project } from "../index"
 import "./Projects.scss"
 
 const Projects = ({ title, projects }) => {
-  //   if (!data) {
-  //     return <h1> No data </h1>
-  //   }
+  if (!projects) {
+    return <h1> No projects </h1>
+  }
 
   return (
     <div className="projects-container">

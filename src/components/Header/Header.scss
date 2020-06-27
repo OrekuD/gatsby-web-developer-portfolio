@@ -1,3 +1,5 @@
+@import "../../constants/colors.scss";
+
 header {
   height: 100px;
   display: flex;
@@ -21,7 +23,7 @@ header {
     }
 
     span {
-      color: #477d84;
+      color: $secondary;
       font-size: 2rem;
     }
   }
@@ -30,7 +32,7 @@ header {
     a {
       font-size: 1.2rem;
       margin-left: 30px;
-      color: black;
+      color: $primary;
       letter-spacing: 0.1rem;
       position: relative;
 
@@ -51,7 +53,7 @@ header {
         width: 0;
         right: 0;
         height: 3px;
-        background-color: #477d84;
+        background-color: $secondary;
         transition: 0.4s ease;
       }
 
@@ -69,6 +71,7 @@ header {
     height: 40px;
     margin-right: 10px;
     display: none;
+    cursor: pointer;
 
     @media (max-width: 500px) {
       display: flex;

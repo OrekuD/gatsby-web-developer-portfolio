@@ -5,14 +5,14 @@
   height: 100vh;
   width: 100vw;
   z-index: 20;
-  background-color: aquamarine;
+  background-color: #f2fafd;
   transform: translateX(-100%);
 
   .close-menu-icon {
-    align-self: flex-end;
     margin: 20px;
     display: block;
     text-align: right;
+    cursor: pointer;
   }
 
   .content {
@@ -21,5 +21,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    p {
+      cursor: pointer;
+      position: relative;
+      font-size: 1.3rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        margin-top: 4px;
+        display: block;
+        width: 0;
+        right: 0;
+        height: 3px;
+        background-color: #477d84;
+        transition: 0.4s ease;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
   }
 }

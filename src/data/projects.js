@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     name: "YouTube Clone",
-    featured: true,
+    featured: false,
     url: "https://reactyoutubecloneapp.netlify.app/",
     github: "https://github.com/OrekuD/react-youtube-clone",
     image: Youtube,
