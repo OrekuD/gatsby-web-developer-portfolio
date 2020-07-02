@@ -2,14 +2,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100vw;
   z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #f2fafd;
   transform: translateX(-100%);
 
   .close-menu-icon {
-    height: 10%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -22,7 +25,6 @@
 
   .content {
     display: flex;
-    height: 40%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -31,6 +33,7 @@
       cursor: pointer;
       position: relative;
       font-size: 1.3rem;
+      margin-bottom: 35px;
 
       &::after {
         content: "";
@@ -52,16 +55,9 @@
       }
     }
   }
-
-  .sidebar-image-container {
-    height: 50%;
-    display: flex;
-    align-items: flex-end;
-
-    .sidebar-image {
-      height: auto;
-      width: 100%;
-      object-fit: cover;
-    }
+  .sidebar-image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }

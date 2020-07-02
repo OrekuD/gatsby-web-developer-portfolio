@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { MdClose } from "react-icons/md"
 import "./Sidebar.scss"
 import { useStaticQuery, graphql } from "gatsby"
@@ -19,23 +19,20 @@ const Sidebar = ({ toggleSidebar, navigateTo }) => {
 
   return (
     <div className="sidebar-container" id="sidebar-container">
-      <div className="close-menu-icon">
-        <span onClick={toggleSidebar}>
-          <MdClose fontSize="30" />
-        </span>
+      <div>
+        <div className="close-menu-icon">
+          <span onClick={toggleSidebar}>
+            <MdClose fontSize="30" />
+          </span>
+        </div>
+        <div className="content">
+          <p onClick={() => navigateTo("/")}>Home</p>
+          <p onClick={() => navigateTo("/about")}>About</p>
+          <p onClick={() => navigateTo("/projects")}>Projects</p>
+          <p onClick={() => navigateTo("/contact")}>Contact</p>
+        </div>
       </div>
-      <div className="content">
-        <p onClick={() => navigateTo("/")}>Home</p>
-        <p onClick={() => navigateTo("/about")}>About</p>
-        <p onClick={() => navigateTo("/projects")}>Projects</p>
-        <p onClick={() => navigateTo("/contact")}>Contact</p>
-      </div>
-      <div className="sidebar-image-container">
-        <Img
-          fluid={data.image.childImageSharp.fluid}
-          className="sidebar-image"
-        />
-      </div>
+      <Img fluid={data.image.childImageSharp.fluid} className="sidebar-image" />
     </div>
   )
 }
