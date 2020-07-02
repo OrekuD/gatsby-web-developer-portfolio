@@ -9,10 +9,15 @@
   transform: translateX(-100%);
 
   .close-menu-icon {
-    margin: 20px;
-    display: block;
-    text-align: right;
-    cursor: pointer;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+    span {
+      cursor: pointer;
+    }
   }
 
   .content {
@@ -45,6 +50,18 @@
           left: 0;
         }
       }
+    }
+  }
+
+  .sidebar-image-container {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+
+    .sidebar-image {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
