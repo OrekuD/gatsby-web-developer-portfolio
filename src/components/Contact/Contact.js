@@ -3,7 +3,14 @@ import "./Contact.scss"
 
 const Contact = () => (
   <div className="contact-container">
-    <h1> Contact page </h1>
+    <div className="contact-inner-container">
+      <div>
+        <input type="text" className="textInput" />
+        <input type="text" className="textInput" />
+      </div>
+      <input type="text" className="textInput" />
+      <textarea className="textArea" />
+    </div>
   </div>
 )
 
