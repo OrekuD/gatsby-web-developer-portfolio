@@ -1,13 +1,13 @@
-import Recipes from "../images/projects/recipes.jpg"
-import Youtube from "../images/projects/youtube.png"
-import Chat from "../images/projects/chat.jpg"
+import Recipes from "../images/projects/recipes.png"
+import Shop from "../images/projects/shop.jpg"
+import Chat from "../images/projects/chat.png"
 
 export const projects = [
   {
     name: "Chat app",
     featured: true,
-    url: "https://react-socketio-chat-app.netlify.app/",
-    github: "https://github.com/OrekuD/react-chat-app",
+    url: "http://localhost:3000",
+    github: "http://localhost:3000",
     image: Chat,
     description:
       "Consequat cupidatat velit elit velit. Lorem dolor Lorem ut nulla qui qui ex labore laboris tempor elit. In velit Lorem amet laboris irure ea excepteur irure amet ad.",
@@ -21,8 +21,8 @@ export const projects = [
   {
     name: "Recipes app",
     featured: true,
-    url: "https://reactrecipes.netlify.app/",
-    github: "https://github.com/OrekuD/react-recipes-app",
+    url: "http://localhost:3000",
+    github: "http://localhost:3000",
     image: Recipes,
     description:
       "Consectetur dolor amet sit aliquip labore. Esse in do sunt id sit. Lorem non cupidatat velit ut adipisicing ex laborum commodo amet culpa id cillum. Laborum enim reprehenderit culpa elit consequat occaecat.",
@@ -35,9 +35,9 @@ export const projects = [
   {
     name: "YouTube Clone",
     featured: false,
-    url: "https://reactyoutubecloneapp.netlify.app/",
-    github: "https://github.com/OrekuD/react-youtube-clone",
-    image: Youtube,
+    url: "http://localhost:3000",
+    github: "http://localhost:3000",
+    image: Shop,
     description:
       "Consequat cupidatat velit elit velit. Lorem dolor Lorem ut nulla qui qui ex labore laboris tempor elit. In velit Lorem amet laboris irure ea excepteur irure amet ad.",
     stack: [

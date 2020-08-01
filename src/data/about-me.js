@@ -7,7 +7,7 @@ export const technologies = [
   { id: "2", name: "Javascript" },
   { id: "3", name: "Node.js" },
   { id: "4", name: "React.js" },
-  { id: "5", name: "Gatsby.js" },
-  { id: "6", name: "Next.js" },
-  { id: "5", name: "GraphQl" },
+  { id: "5", name: "Bootstrap" },
+  { id: "6", name: "JQuery" },
+  { id: "5", name: "Vue" },
 ]
