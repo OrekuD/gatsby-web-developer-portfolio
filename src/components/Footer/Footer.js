@@ -4,7 +4,7 @@ import "./Footer.scss"
 const Footer = () => (
   <footer>
     <p>
-      &copy; {new Date().getFullYear()} <span> David Opoku </span> All rights
+      &copy; {new Date().getFullYear()} <span> Jesse Nelson </span> All rights
       reserved
     </p>
   </footer>

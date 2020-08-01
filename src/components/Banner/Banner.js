@@ -19,7 +19,7 @@ const Banner = () => {
   return (
     <section className="banner-container">
       <div className="banner-content">
-        <h3> I'm David </h3>
+        <h3> I'm Jesse </h3>
         <h4> a full-stack software developer </h4>
         <Link to="/contact" className="button">
           <p> Contact me </p>

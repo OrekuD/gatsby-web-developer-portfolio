@@ -6,7 +6,7 @@ import "./Header.scss"
 const Header = ({ toggleSidebar }) => (
   <header>
     <h3>
-      Portfolio<span>.</span>
+      Nelson<span>.</span>
     </h3>
     <div>
       <Link to="/">Home</Link>
